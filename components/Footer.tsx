@@ -9,10 +9,50 @@ type Props = {};
 const Footer = (props: Props) => {
   const [email, setEmail] = useState('')
   return (
-    <div className="pt-[30px] max-w-[1340px] relative w-full text-[#000] mb-5 mx-auto">
+    <div className="pt-[30px] max-w-[1340px]  relative w-full text-[#000] mb-5 mx-auto">
       <div className="max-w-full text-[#2d2323]  rounded-[20px] mx-auto block">
-        <div className="grid grid-cols-4 gap-4 p-10">
-          <div className="block w-full">
+        <div className="grid grid-cols-1 min-[500px]:grid-cols-2 md:grid-cols-4 px-5  gap-4 p-2 sm:p-10">
+         
+          <div className="w-full md:col-start-3  h-full ">
+            <div className="">
+              <h5 className="font-black text-[20px] leading-[24px]">
+                About Homerun
+              </h5>
+            </div>
+            <div className="">
+              <ul className="pl-0 flex flex-col gap-2 my-[10px]">
+                <li className="text-[20px] transition-all ease-in-out duration-200 cursor-pointer hover:text-[#2D2323] pt-[5px] pb-[10px] font-normal leading-[120%]  text-[rgba(45,35,35,.7)] l">
+                  About us
+                </li>
+                <li className="text-[20px] transition-all ease-in-out duration-200 cursor-pointer hover:text-[#2D2323] pt-[5px] pb-[10px] font-normal leading-[120%] text-[rgba(45,35,35,.7)]  ">
+                  Careers
+                </li>
+                <li className="text-[20px] transition-all ease-in-out duration-200 cursor-pointer hover:text-[#2D2323] pt-[5px] pb-[10px] font-normal leading-[120%] text-[rgba(45,35,35,.7)]  ">
+                  {" "}
+                  Contact us
+                </li>
+              </ul>
+              <div className="mt-[30px]">
+              <h5 className="font-black text-[20px] leading-[24px]">
+                Legal
+              </h5>
+              <ul className="pl-0 flex flex-col gap-2 my-[10px]">
+                <li>
+
+                <Link href={'/terms-of-service'} className="cursor-pointer text-[20px] transition-all ease-in-out duration-200 hover:text-[#2D2323] pt-[5px] pb-[10px] font-normal leading-[120%]  text-[rgba(45,35,35,.7)] l">
+                
+              Terms
+                </Link>
+                </li>
+                <li className="cursor-pointer text-[20px] pt-[5px] pb-[10px] font-normal leading-[120%] transition-all ease-in-out duration-200 hover:text-[#2D2323] text-[rgba(45,35,35,.7)]  ">
+                Privacy
+                </li>
+               
+              </ul>
+              </div>
+            </div>
+          </div>
+          <div className="block col-span-1 md:col-start-4 w-full  ">
             <div className="">
               <h5 className="font-black text-[20px] leading-[24px]">
                 Our newsletter
@@ -89,45 +129,6 @@ const Footer = (props: Props) => {
                     alt="image"
                   />
                 </div>
-              </div>
-            </div>
-          </div>
-          <div className="w-full   h-full ">
-            <div className="">
-              <h5 className="font-black text-[20px] leading-[24px]">
-                About Homerun
-              </h5>
-            </div>
-            <div className="">
-              <ul className="pl-0 flex flex-col gap-2 my-[10px]">
-                <li className="text-[20px] transition-all ease-in-out duration-200 cursor-pointer hover:text-[#2D2323] pt-[5px] pb-[10px] font-normal leading-[120%]  text-[rgba(45,35,35,.7)] l">
-                  About us
-                </li>
-                <li className="text-[20px] transition-all ease-in-out duration-200 cursor-pointer hover:text-[#2D2323] pt-[5px] pb-[10px] font-normal leading-[120%] text-[rgba(45,35,35,.7)]  ">
-                  Careers
-                </li>
-                <li className="text-[20px] transition-all ease-in-out duration-200 cursor-pointer hover:text-[#2D2323] pt-[5px] pb-[10px] font-normal leading-[120%] text-[rgba(45,35,35,.7)]  ">
-                  {" "}
-                  Contact us
-                </li>
-              </ul>
-              <div className="mt-[30px]">
-              <h5 className="font-black text-[20px] leading-[24px]">
-                Legal
-              </h5>
-              <ul className="pl-0 flex flex-col gap-2 my-[10px]">
-                <li>
-
-                <Link href={'/terms-of-service'} className="cursor-pointer text-[20px] transition-all ease-in-out duration-200 hover:text-[#2D2323] pt-[5px] pb-[10px] font-normal leading-[120%]  text-[rgba(45,35,35,.7)] l">
-                
-              Terms
-                </Link>
-                </li>
-                <li className="cursor-pointer text-[20px] pt-[5px] pb-[10px] font-normal leading-[120%] transition-all ease-in-out duration-200 hover:text-[#2D2323] text-[rgba(45,35,35,.7)]  ">
-                Privacy
-                </li>
-               
-              </ul>
               </div>
             </div>
           </div>

@@ -13,8 +13,8 @@ type Props = {};
 const Register = (props: Props) => {
   return (
     <div className="bg-white w-full min-h-screen flex-col  relative">
-      <header className="left-0  py-9 px-10 absolute right-0 z-10 flex items-center justify-between ">
-        <Link href={'/'} className="">
+      <header className="left-0  py-9 px-10 relative  sm:sticky top-0 z-10 flex items-center justify-between ">
+        <Link href={"/"} className="">
           <Image
             src={logo}
             width={100}
@@ -42,7 +42,7 @@ const Register = (props: Props) => {
           </Link>
         </div>
       </header>
-      <div className="md:py-[36px] md:px-10 flex flex-1 items-center justify-center py-[26px] px-5 ">
+      <div className="md:py-[36px] md:px-10 flex flex-1 items-center justify-center px-1 ">
         <div className="lg:mt-[20px] py-[4vmin] flex justify-start  px-0 w-full">
           <div className="flex justify-center lg:w-[50%]   lg:p-10 w-full">
             <div className="max-w-[500px]  w-full">
@@ -51,7 +51,7 @@ const Register = (props: Props) => {
                   Start hiring with Homerun
                 </h1>
                 <div className="">
-                  <div className="px-[60px]">
+                  <div className="px-3 sm:px-[60px]">
                     <LoginButton image={google} text={"Continue with Google"} />
                     <LoginButton
                       image={microsoft}

@@ -18,11 +18,11 @@ import letter from "@/public/Internship Completion Certificate 1.svg";
 import Revel from "./Revel";
 const HeroSection = (props: Props) => {
   return (
-    <motion.div className="mt-5 flex flex-col gap-10 w-full h-full overflow-hidden ">
+    <motion.div className="sm:mt-5 flex flex-col gap-10 w-full h-full overflow-hidden ">
       <div className="mb-5 items-center p-0 w-full max-w-[1340px] text-center justify-center self-stretch mx-auto flex  flex-col">
         <div className="max-w-[1200px]  w-full mb-[60px] flex-col flex items-center mt-10 mx-auto ">
           <Revel>
-            <h1 className="max-w-[700px] text-[#2D2323] font-cabinet  font font-[700] leading-[89.28px] tracking-[-0.02em] font-['Cabinet Grotesk'] text-[72px] mt-5 mb-3 ">
+            <h1 className="max-w-[700px]  text-[#2D2323] font-cabinet  font font-[700]  sm:leading-[89.28px] tracking-[-0.02em] font-['Cabinet Grotesk'] text-[40px] sm:text-[50px] md:text-[65px] lg:text-[72px] mt-5 mb-3 ">
               You deserve more
               <p className="flex w-full items-end gap-3 justify-center ">
                 than a certificate
@@ -30,7 +30,7 @@ const HeroSection = (props: Props) => {
                   src={letter}
                   width={300}
                   height={300}
-                  className="w-fit mb-4 h-full object-contain"
+                  className="w-fit mb-2 sm:mb-4 h-full object-contain"
                   alt="image"
                 />
               </p>
@@ -59,15 +59,15 @@ const HeroSection = (props: Props) => {
       </div>
       <Revel>
         <div className="max-w-[656px]  w-full  mx-auto">
-          <h1 className="font-[700] font-cabinet text-[2.5rem] leading-[4rem] tracking-[-0.015em] text-center text-[#1A1C22] ">
+          <h1 className="font-[700] max-sm:px-4 font-cabinet text-[2.5rem] leading-[4rem] tracking-[-0.015em] text-center text-[#1A1C22] ">
             How cool would it be to get rewarded for being a{" "}
             <span className="text-[#4F75FE] ">Campus Ambassador</span>
           </h1>
         </div>
       </Revel>
+        <div className="mt-1   w-full flex md:flex-row flex-col mx-auto gap-10 px-4 sm:px-10">
       <Revel>
-        <div className="mt-1 w-full grid mx-auto gap-10 grid-cols-1 lg:grid-cols-7  px-10">
-          <div className="col-span-1 lg:col-span-4 rounded-[10px] bg-[#EEE9DF] h-full">
+          <div className=" rounded-[10px] md:basis-2/3 bg-[#EEE9DF] h-full">
             <div className="m-10 max-w-[570px]  mx-auto w-full">
               <p className="font-archivo font-[400] text-[22px] leading-[42.94px] px-5 tracking-[-0.1%]  w-full">
                 Most brands now hire student/youth ambassadors to increase their
@@ -77,13 +77,16 @@ const HeroSection = (props: Props) => {
               </p>
             </div>
           </div>
-          <div className="col-span-1 lg:col-span-2  flex flex-col items-center justify-center rounded-[10px] bg-[#2D2323] ">
+      </Revel>
+      <Revel>
+          <div className=" flex flex-col basis-1/3 items-center justify-center rounded-[10px] bg-[#2D2323] ">
             <div className="font-cabinet max-w-[236px] m-10 font-[500] text-[30px] leading-[54.72px] tracking-[-1%] text-[#F3F2F2]">
               The campus ambassadors? They get nothing
             </div>
           </div>
-        </div>
       </Revel>
+        </div>
+        
       {/* campus ceo section */}
       <Revel>
         <div
@@ -91,7 +94,7 @@ const HeroSection = (props: Props) => {
         "
         >
           <div className="font-archivo max-w-[723px]  font-[500] text-2xl tracking-[-0.5%] text-center">
-            <p className="leading-[3rem] text-[#2D2323]">
+            <p className="leading-[3rem] px-4 text-[#2D2323]">
               “Campus CEO flips the model and returns the value to the students
               who have an instinct of leadership and have been bitten with the
               craze for internet entrepreneurship by rewarding them for active
@@ -103,7 +106,7 @@ const HeroSection = (props: Props) => {
 
       {/* Community card */}
       <Revel>
-        <div className="  h-full relative mx-10">
+        <div className="  h-full relative mx-4 sm:mx-10">
           <CommunityCard />
         </div>
       </Revel>
@@ -114,7 +117,7 @@ const HeroSection = (props: Props) => {
         gap-5
         "
         >
-          <h1 className="font-cabinet font-[500] text-[36px] leading-[44.64px] tracking-[-0.2%] text-[#000000] ">
+          <h1 className="font-cabinet max-md:text-center font-[500] text-[36px] leading-[44.64px] tracking-[-0.2%] text-[#000000] ">
             Here’s what students are saying
           </h1>
           <div className="w-full h-auto mt-7">
@@ -169,7 +172,7 @@ ambassadors"
       </div>
 
       <Revel>
-        <div className="grid grid-cols-1 lg:grid-cols-6 items-center justify-center px-10 pb-[20px] mx-10 gap-10">
+        <div className="grid grid-cols-1 lg:grid-cols-6 items-center justify-center md:px-10 pb-[20px] mx-4 sm:mx-10 gap-10">
           <div className="col-span-1 lg:col-span-3">
             <div className="">
               <EmpoweredCard

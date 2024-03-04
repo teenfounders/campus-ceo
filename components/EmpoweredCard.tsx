@@ -13,7 +13,7 @@ type Props = {
 
 const EmpoweredCard = (props: Props) => {
   return (
-    <div className={twMerge('bg-white max-w-[630px] min-h-[410px] w-full h-full rounded-[20px]  py-10 px-[60px]',props.className)}>
+    <div className={twMerge('bg-white max-w-[630px] min-h-[410px] w-full h-full rounded-[20px] py-[20px] md:py-10 px-[20px] md:px-[60px]',props.className)}>
       {props.image1 && (
         <Image
           src={props.image1}
