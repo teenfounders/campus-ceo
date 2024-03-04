@@ -21,7 +21,7 @@ const TermComponent = (props: Props) => {
   return (
     <div
     ref={ref}
-      className={`min-h-screen max-w-[950px] scroll-m-32 flex flex-col justify-start items-start mb-[30px] pb-[30px] leading-9 px-[30px] w-full `}
+      className={`min-h-screen max-w-[950px] scroll-m-32 flex flex-col justify-start items-start mb-[30px] pb-[30px] leading-9 px-[10px] lg:px-[30px] w-full `}
       id="id1"
     >
       <h1 className="text-[56px] font-cabinet mb-2 font-[900]   leading-[110%] ">

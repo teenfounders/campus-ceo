@@ -29,7 +29,7 @@ const Page = () => {
 
    
   return (
-    <div className="xl:items-center mt-[60px] h-full !scroll-smooth xl:-mt-7 xl:pt-10 flex flex-col mx-10">
+    <div className="xl:items-center mt-[10px] lg:mt-[60px] h-full !scroll-smooth xl:-mt-7 xl:pt-10 flex flex-col lg:mx-10">
       <div className="flex w-full relative top-[60px]  h-full flex-col items-center justify-center">
         <div className="max-w-[1200px] w-full mx-10 block ">
           <div className="h-full  w-full flex flex-row">
