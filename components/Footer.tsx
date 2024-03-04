@@ -4,12 +4,23 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 import footerlogo from "@/public/footerlogo.png";
+import StartHiring from "./StartHiring";
+import Revel from "./Revel";
 type Props = {};
 
 const Footer = (props: Props) => {
   const [email, setEmail] = useState('')
   return (
-    <div className="pt-[30px] max-w-[1340px]  relative w-full text-[#000] mb-5 mx-auto">
+    <div className="w-full h-full relative">
+      <div className="w-full h-full relative">
+<Revel>
+
+<StartHiring/>
+</Revel>
+      </div>
+
+{/* footer */}
+    <footer className="pt-[30px] max-w-[1340px]  relative w-full text-[#000] mb-5 mx-auto">
       <div className="max-w-full text-[#2d2323]  rounded-[20px] mx-auto block">
         <div className="grid grid-cols-1 min-[500px]:grid-cols-2 md:grid-cols-4 px-5  gap-4 p-2 sm:p-10">
          
@@ -62,14 +73,14 @@ const Footer = (props: Props) => {
               <Link
                 href={""}
                 className="max-w-[233px] w-full inline-block my-[10px] -ml-[3px]"
-              >
+                >
                 <Image
                   src={footerlogo}
                   width={1000}
                   height={1000}
                   className="w-full h-auto object-contain"
                   alt="footer image"
-                />
+                  />
               </Link>
               <p className="text-lg font-[400] leading-[140%] ">
                 Receive must-read articles and trends on company culture, hiring
@@ -79,17 +90,17 @@ const Footer = (props: Props) => {
                 <form className="flex items-end h-[50px]">
                   <input
                   onChange={(e)=> setEmail(e.target.value)}
-                    type="text"
-                    value={email}
-                    placeholder="Email"
-                    className="bg-[#DBD5CC] max-w-[70%] w-full  py-[9px] px-[15px] rounded-l-[30px] h-[50px] pl-5 text-[18px] placeholder:text-[#2d2323] focus:text-white inline-block text-[#333]  leading-[1.4] "
+                  type="text"
+                  value={email}
+                  placeholder="Email"
+                  className="bg-[#DBD5CC] max-w-[70%] w-full  py-[9px] px-[15px] rounded-l-[30px] h-[50px] pl-5 text-[18px] placeholder:text-[#2d2323] focus:text-white inline-block text-[#333]  leading-[1.4] "
                   />
                   <input
                     
                     type="text"
                     placeholder="Sign up"
                     className="bg-white w-full max-w-[30%] text-[#2d2323] rounded-r-[30px] h-[50px] placeholder:text-[#2d2323] pr-2 text-lg relative top-0 py-[9px] px-[15px]"
-                  />
+                    />
                 </form>
               </div>
               <div className="flex w-full  gap-1">
@@ -103,7 +114,7 @@ const Footer = (props: Props) => {
                     height={34}
                     className="" // Set the height to the desired height of the image
                     alt="image"
-                  />
+                    />
                 </div>
                 <div className="w-10 h-10 rounded-full bg-[#2d2323] items-center justify-center flex mr-2 mt-[10px]">
                   <Image
@@ -115,7 +126,7 @@ const Footer = (props: Props) => {
                     height={34}
                     className="" // Set the height to the desired height of the image
                     alt="image"
-                  />
+                    />
                 </div>
                 <div className="w-10 h-10 rounded-full bg-[#2d2323] items-center justify-center flex mr-2 mt-[10px]">
                   <Image
@@ -127,14 +138,15 @@ const Footer = (props: Props) => {
                     height={34}
                     className="" // Set the height to the desired height of the image
                     alt="image"
-                  />
+                    />
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </footer>
+                    </div>
   );
 };
 

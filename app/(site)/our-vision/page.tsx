@@ -6,7 +6,7 @@ type Props = {};
 
 const page = (props: Props) => {
   return (
-    <div className="bg-white overflow-hidden rounded-[40px] px-4 sm:px-10  items-center justify-center flex flex-col w-full h-full gap-10 max-w-full py-5 mb-10">
+    <div className="bg-white overflow-hidden rounded-[40px] px-4 sm:px-10  items-center justify-center flex flex-col w-full h-full gap-10 max-w-full py-5 mb-10 scroll-m-7">
       {/* hero section */}
       <div className="max-w-[950px] gap-10 flex flex-col justify-center items-center w-full h-full">
         <div className=" rounded-lg items-end w-full  justify-end bg-[#9971F4]">

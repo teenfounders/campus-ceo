@@ -16,6 +16,7 @@ import star1 from "@/public/star.jpeg";
 import EmpoweredCard from "./EmpoweredCard";
 import letter from "@/public/Internship Completion Certificate 1.svg";
 import Revel from "./Revel";
+import Link from "next/link";
 const HeroSection = (props: Props) => {
   return (
     <motion.div className="sm:mt-5 flex flex-col gap-10 w-full h-full overflow-hidden ">
@@ -42,6 +43,13 @@ const HeroSection = (props: Props) => {
               experience and rewards{" "}
             </p>
           </Revel>
+          <Revel>
+          <Link href={"register"}>
+                <button className="bg-[#4f75fe] hover:bg-[#254CDA] mt-10 hover:-rotate-2 transition-all duration-200 ease-in-out  leading-5 text-white rounded-[30px] flex-0 shrink pt-4 pr-5 pb-[15px] pl-[20px] text-lg font-normal ">
+                  Get started
+                </button>
+              </Link>
+          </Revel>
         </div>
         <Revel>
           <div className="w-full mb-10 items-center px-5 max-w-[1340px] rounded-[40px] flex flex-col self-stretch mx-auto overflow-hidden h-auto">
@@ -65,28 +73,45 @@ const HeroSection = (props: Props) => {
           </h1>
         </div>
       </Revel>
-        <div className="mt-1   w-full flex md:flex-row flex-col mx-auto gap-10 px-4 sm:px-10">
-      <Revel>
-          <div className=" rounded-[10px] md:basis-2/3 bg-[#EEE9DF] h-full">
-            <div className="m-10 max-w-[570px]  mx-auto w-full">
-              <p className="font-archivo font-[400] text-[22px] leading-[42.94px] px-5 tracking-[-0.1%]  w-full">
+      {/* <div className="mt-1   w-full flex md:flex-row flex-col justify-center mx-auto gap-10 px-4 sm:px-10">
+    
+          <div className=" rounded-[10px]  p-10  bg-[#EEE9DF]   h-full items-center flex justify-center w-full">
+            <div className=" font-archivo basis-2/3 font-[400] text-[22px] leading-[42.94px] px-5 tracking-[-0.1%]  w-full">
+              
                 Most brands now hire student/youth ambassadors to increase their
                 reach on social media platforms like Instagram, Facebook,
                 Twitter and sometimes for sales of their products on the pretext
                 of a certificate.
-              </p>
+             
             </div>
           </div>
-      </Revel>
+      
       <Revel>
-          <div className=" flex flex-col basis-1/3 items-center justify-center rounded-[10px] bg-[#2D2323] ">
-            <div className="font-cabinet max-w-[236px] m-10 font-[500] text-[30px] leading-[54.72px] tracking-[-1%] text-[#F3F2F2]">
+          <div className=" flex flex-col items-center justify-center rounded-[10px] bg-[#2D2323] ">
+            <div className="font-cabinet max-w-[236px] m-11 font-[500] text-[30px] leading-[54.72px] tracking-[-1%] text-[#F3F2F2]">
               The campus ambassadors? They get nothing
             </div>
           </div>
       </Revel>
         </div>
-        
+         */}
+      <div className="mt-1 w-full h-full flex lg:flex-row flex-col justify-center mx-auto gap-10 px-4 sm:px-10">
+       
+       <Revel>
+        <div className="rounded-[10px]  lg:max-w-[650px] p-10 font-archivo font-[400] text-[22px] leading-[42.94px]   tracking-[-0.1%]  bg-[#EEE9DF] h-full items-center flex justify-center w-full basis-2/3">
+          Most brands now hire student/youth ambassadors to increase their reach
+          on social media platforms like Instagram, Facebook, Twitter and
+          sometimes for sales of their products on the pretext of a certificate.
+        </div>
+        </Revel> 
+
+        <Revel> 
+        <div className="flex font-cabinet min-h-full lg:max-w-[336px] p-11 font-[500] text-[30px] leading-[54.72px] tracking-[-1%] text-[#F3F2F2] flex-col items-center   justify-center rounded-[10px] bg-[#2D2323] h-full w-full basis-1/3">
+          The campus ambassadors? They get nothing
+        </div>
+        </Revel> 
+      </div>
+
       {/* campus ceo section */}
       <Revel>
         <div
