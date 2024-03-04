@@ -24,10 +24,10 @@ const TermComponent = (props: Props) => {
       className={`min-h-screen max-w-[950px] scroll-m-32 flex flex-col justify-start items-start mb-[30px] pb-[30px] leading-9 px-[30px] w-full `}
       id="id1"
     >
-      <h1 className="text-[56px] mb-2 font-[900]  font-archivo leading-[110%] ">
+      <h1 className="text-[56px] font-cabinet mb-2 font-[900]   leading-[110%] ">
         Terms of Service
       </h1>
-      <div className="max-w-[780px] mx-auto">
+      <div className="max-w-[780px] font-archivo mx-auto">
         <ol className="text-left pl-0">
           <li className={style.listStyle}>
             These Terms of Service can be downloaded as a PDF

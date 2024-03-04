@@ -33,7 +33,7 @@ const Page = () => {
       <div className="flex w-full relative top-[60px]  h-full flex-col items-center justify-center">
         <div className="max-w-[1200px] w-full mx-10 block ">
           <div className="h-full  w-full flex flex-row">
-            <div className="px-[30px] mb-[50px] sticky top-[120px] max-w-[33.33%] w-full float-left">
+            <div className="px-[30px] mb-[50px] sticky top-[120px] max-w-[33.33%] w-full lg:block hidden float-left">
               <div className="max-w-[320px] w-full sticky top-[100px] items-stretch flex-col flex">
                 <h5 className="font-black my-[10px] text-[20px] leading-[24px]">
                   Table of content
@@ -54,7 +54,7 @@ const Page = () => {
                 </ol>
               </div>
             </div>
-            <div className="flex  w-[66.66%] flex-col px-[10px] relative min-h-[1px] float-left">
+            <div className="flex w-full  lg:w-[66.66%] flex-col px-[10px] relative min-h-[1px] float-left">
             <TermComponent/>
             <DataProcessing/>
             </div>

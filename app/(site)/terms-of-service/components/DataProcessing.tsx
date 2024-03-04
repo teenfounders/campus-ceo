@@ -36,10 +36,10 @@ const style = {
     className={`min-h-screen max-w-[950px] scroll-m-32 flex flex-col justify-start items-start mb-[30px] pb-[30px] px-[30px] w-full   `}
     id="id2"
   >
-    <h1 className="text-[56px] max-w-[609px] mb-2 font-[900]  font-archivo leading-[110%] ">
+    <h1 className="text-[56px] max-w-[609px] mb-2 font-[900]  font-cabinet leading-[110%] ">
       Data Processing Addendum
     </h1>
-    <div className="max-w-[780px] mx-auto">
+    <div className="max-w-[780px] font-archivo mx-auto">
       <ol className="text-left pl-0">
         <li className={style.listStyle}>
           This data processing addendum (“DPA”) pertains to the
